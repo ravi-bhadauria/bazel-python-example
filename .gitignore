@@ -1,0 +1,40 @@
+.DS_Store
+
+# Intellij
+.idea
+
+# VSCode
+.vscode
+.metals
+
+# Bazel plugin
+.ijwb
+
+# Bazel outputs
+bazel-*
+!bazel-run.sh
+
+# Bazel local disk cache
+.build-disk-cache
+
+# Ignoring go.sum since its information is duplicated in 3rdparty/go_workspace.bzl
+go/go.sum
+
+# Python
+__pycache__/
+
+# Python virtual environment
+venv/*
+
+auth_key.json
+
+target/
+*.log
+
+# Go profile outputs
+*.prof
+
+# Buildkite
+.buildkite/*.json
+
+manual.netrc
