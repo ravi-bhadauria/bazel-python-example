@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package practical.k8.codelab;
+
+// The sorting service definition.
+service SortingService {
+  // Sends a greeting
+  rpc execute (SortingRequest) returns (SortingResponse) {}
+}
+
+// The request message containing size of array
+message SortingRequest {
+  uint32 arrsize = 1;
+}
+
+// The response message the IP of worker with unsorted and sorted arrays
+message SortingResponse {
+  string ip = 1;
+  repeated uint32 unsortedArray = 2;
+  repeated uint32 sortedArray = 3;
+}

@@ -1,0 +1,5 @@
+grpcio==1.41.0
+grpcio-reflection==1.41.0
+grpcio-tools==1.41.0
+grpcio-health-checking==1.41.0
+py-grpc-prometheus==0.7.0
